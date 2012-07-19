@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Pluto -  Planet Generator in Ruby : Lets You Build Web Pages from Published Web Feeds" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Pluto -  Planet Generator in Ruby</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/geraldb/pluto">View on GitHub</a>
+
+          <h1 id="project_title">Pluto -  Planet Generator in Ruby</h1>
+          <h2 id="project_tagline">Lets You Build Web Pages from Published Web Feeds</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/geraldb/pluto/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/geraldb/pluto/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>pluto</h1>
+
+<p>Another Planet Generator in Ruby - Lets You Build Web Pages
+from Published Web Feeds</p>
+
+<ul>
+<li><a href="http://geraldb.github.com/pluto">geraldb.github.com/pluto</a></li>
+</ul><h2>Usage</h2>
+
+<p>Use the <code>pluto</code> command line tool and pass in one or more planet configuration files. Example:</p>
+
+<pre><code>pluto ruby.yml
+</code></pre>
+
+<p>This will</p>
+
+<p>1) fetch all feeds listed in <code>ruby.yml</code> and </p>
+
+<p>2) store all entries in a local database, that is, <code>ruby.sqlite</code> in your working folder and</p>
+
+<p>3) generate a planet web page, that is, <code>ruby.html</code> using the builtin <a href="https://github.com/geraldb/pluto/blob/master/templates/blank.html.erb"><code>blank</code> template</a> in your working folder using all feed entries from the local database.</p>
+
+<p>Open up <code>ruby.html</code> to see your planet web page. Voila!</p>
+
+<h3>Planet Configuration Sample</h3>
+
+<p><code>ruby.yml</code>:</p>
+
+<pre><code>title: Planet Ruby
+
+feeds:
+  - rubyflow
+  - rubysource
+  - edgerails
+  - rubyonrails
+  - railstutorial
+
+rubyflow:
+  title: Ruby Flow
+  feed_url: http://feeds.feedburner.com/Rubyflow?format=xml
+  url: http://rubyflow.com
+
+rubysource:
+  title: Ruby Source
+  feed_url: http://rubysource.com/feed
+  url: http://rubysource.com
+
+edgerails:
+  title: What's new in Edge Rails?
+  feed_url:  http://www.edgerails.info/blog.atom
+  url: http://www.edgerails.info
+
+rubyonrails:
+  title: Ruby on Rails Blog
+  feed_url: http://weblog.rubyonrails.org/feed/atom.xml
+  url: http://weblog.rubyonrails.org
+
+railstutorial:
+  title: Rails Tutorial News
+  feed_url: http://feeds.feedburner.com/railstutorial?format=xml
+  url: http://news.railstutorial.org
+</code></pre>
+
+<p>For more samples, see <a href="https://github.com/geraldb/pluto/blob/master/samples/nytimes.yml"><code>nytimes.yml</code></a>,
+<a href="https://github.com/geraldb/pluto/blob/master/samples/js.yml"><code>js.yml</code></a>,
+<a href="https://github.com/geraldb/pluto/blob/master/samples/dart.yml"><code>dart.yml</code></a>.</p>
+
+<h2>Install</h2>
+
+<p>Just install the gem:</p>
+
+<pre><code>$ gem install pluto
+</code></pre>
+
+<h2>Alternatives</h2>
+
+<p>planet.rb by Akira Yamada <a href="http://planet.rubyforge.org">(Site)</a></p>
+
+<p>Planet.rb by Pablo Astigarraga <a href="https://github.com/pote/planet.rb">(Site)</a>  - Used with Jekyll/Octopress Site Generator</p>
+
+<h2>License</h2>
+
+<p>The <code>pluto</code> scripts are dedicated to the public domain.
+Use it as you please with no restrictions whatsoever.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Pluto -  Planet Generator in Ruby maintained by <a href="https://github.com/geraldb">geraldb</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
